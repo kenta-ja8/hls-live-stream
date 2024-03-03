@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Live Stream Demo</title>
+</head>
+<body>
+  <h1>Live Stream Demo</h1>
+  <div style="display:flex">
+    <div style="border:1px solid black;">
+      <div><button id="btn-start-live" type="button">LiveStart</button></div>
+      <video id="video-upload" width="640" height="480" controls autoplay></video>
+    </div>
+    <div style="border:1px solid black;">
+      <div>
+          <button id="btn-start-view" type="button">ViewStart</button>
+          * Video playback becomes possible only after the m3u8 file has been generated. 
+        </div>
+      <video id="video-download" width="640" height="480" controls autoplay></video>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+  <script src="./script.js" ></script>
+</body>
+</html>
